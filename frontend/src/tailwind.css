@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   GLOBAL RESETS (OLD UI)
+   ========================= */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f9fafb; /* gray-50 */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Remove dark mode leftovers */
+* {
+  color-scheme: light;
+}
+
+/* Smooth UI like before */
+button {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
